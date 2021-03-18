@@ -1,0 +1,581 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.gnd {
+  width: 10px;
+  height: 10px;
+  margin-top: 20%;
+}
+
+.sol {
+  display: block;
+  font-size: large;
+}
+
+
+
+.dot {
+  height: 70px;
+  width: 70px;
+  background-color: #bbb;
+  border-radius: 70%;
+  display: inline-block;
+}
+
+.ver-value {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: -3%;
+  font-size: medium;
+}
+
+.hor-value {
+  position: absolute;
+  margin-top: -53%;
+  margin-left: 80%;
+  font-size: medium;
+
+}
+
+@media only screen and (min-width: 340px) {
+  .ver-value {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size: medium;
+  }
+  
+  .hor-value {
+    position: absolute;
+    margin-top: -48%;
+    margin-left: 80%;
+    font-size: medium;
+  
+  }
+} 
+
+@media only screen and (min-width: 397px) {
+  .ver-value {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 6%;
+    font-size: medium;
+  }
+  
+  .hor-value {
+    position: absolute;
+    margin-top: -46%;
+    margin-left: 80%;
+    font-size: medium;
+  
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+  .ver-value {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 20%;
+    font-size: x-large;
+  }
+  .hor-value {
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 90%;
+    font-size: x-large;
+  
+  }
+} 
+
+@media only screen and (min-width: 1100px) {
+  .sol {
+    font-size: x-large;
+  }
+} 
+
+
+.dots-mid {
+  margin-bottom: 15%;
+}
+.dots-up {
+  margin-top: 20%;
+  margin-bottom: 15%;
+}
+
+.resistance {
+  width: 60px;
+  height: 40px;
+}
+
+.volt {
+  width: 60px;
+  height: 60px;
+}
+
+.vol , .vol_dep , .current {
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  padding-top: 5%;
+  margin-top: -26%;
+}
+
+.vol_ver , .vol_dep_ver , .current_ver {
+  position: absolute;
+  width: 50px;
+  height: 55px;
+  margin-top: 33%;
+  margin-left: -6%;
+}
+
+.res , .wire {
+  position: absolute;
+  width: 65px;
+  height: 50px;
+}
+
+.res_ver , .wire_ver {
+  position: absolute;
+  width: 40px;
+  height: 65px;
+  padding-top: 13%;
+  margin-top: 21%;
+}
+
+@media only screen and (min-width: 340px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 73px;
+    padding-top: 11%;
+    margin-top: 20%;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    padding-top: 5%;
+    margin-top: -25%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 55px;
+    height: 62px;
+    margin-top: 31%;
+    margin-left: -6%;
+  }
+} 
+
+@media only screen and (min-width: 359px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    padding-top: 11%;
+    margin-top: 20%;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    padding-top: 5%;
+    margin-top: -25%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 55px;
+    height: 62px;
+    margin-top: 31%;
+    margin-left: -6%;
+  }
+} 
+
+@media only screen and (min-width: 370px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 73px;
+    padding-top: 11%;
+    margin-top: 20%;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 85px;
+    height: 100px;
+    padding-top: 5%;
+    margin-top: -25%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 55px;
+    height: 62px;
+    margin-top: 31%;
+    margin-left: -6%;
+  }
+} 
+
+@media only screen and (min-width: 397px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 85px;
+    padding-top: 9%;
+    margin-top: 16%;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    padding-top: 5%;
+    margin-top: -25%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    margin-top: 25%;
+    margin-left: -6%;
+  }
+} 
+
+@media only screen and (min-width: 470px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 90px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    margin-top: -29%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 65px;
+    height: 75px;
+    margin-top: 25%;
+    margin-left: -8%;
+  }
+} 
+
+@media only screen and (min-width: 510px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 90px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    padding-top: 1%;
+    margin-top: -30%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    margin-top: 22%;
+    margin-left: -8%;
+  }
+  
+} 
+@media only screen and (min-width: 550px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 94px;
+    padding-top: 5%;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    margin-top: -30%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 70px;
+    height: 83px;
+    margin-top: 22%;
+    margin-left: -8%;
+  }
+}
+@media only screen and (min-width: 610px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 95px;
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 40px;
+    height: 95px;
+    padding-top: 5%;
+  }
+  
+}
+
+@media only screen and (min-width: 682px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 70px;
+    padding-top: 18%;
+    height: 125px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 130px;
+    height: 135px;
+    margin-top: -15%;
+    margin-left: -2%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    margin-top: 35%;
+    margin-left: -2%;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 70px;
+    padding-top: 13%;
+    height: 140px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 175px;
+    height: 170px;
+    margin-top: -20%;
+  }
+
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 100px;
+    height: 115px;
+    margin-top: 28%;
+    margin-left: -6%;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 70px;
+    padding-top: 6%;
+    height: 165px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    margin-top: -30%;
+    margin-left: 1px;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 128px;
+    height: 145px;
+    margin-top: 22%;
+    margin-left: -9%;
+  }
+}
+
+@media only screen and (min-width: 1188px) {
+  .res_ver , .wire_ver {
+    position: absolute;
+    width: 75px;
+    padding-top: 2%;
+    height: 180px;
+  }
+  .vol , .vol_dep , .current {
+    position: absolute;
+    width: 312px;
+    height: 310px;
+    margin-top: -33%;
+  }
+  .vol_ver , .vol_dep_ver , .current_ver {
+    position: absolute;
+    width: 153px;
+    height: 174px;
+    margin-top: 18%;
+    margin-left: -11%;
+  }
+}
+
+@media only screen and (min-width: 340px) {
+  .res , .wire {
+    position: absolute;
+    width: 76px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 359px) {
+  .res , .wire {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 370px) {
+  .res , .wire {
+    position: absolute;
+    width: 85px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 397px) {
+  .res , .wire {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 430px) {
+  .res , .wire {
+    position: absolute;
+    width: 110px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 470px) {
+  .res , .wire {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+  }
+} 
+
+@media only screen and (min-width: 510px) {
+  .res , .wire {
+    position: absolute;
+    width: 130px;
+    height: 50px;
+  }
+} 
+@media only screen and (min-width: 520px) {
+  .res , .wire {
+    position: absolute;
+    width: 140px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 610px) {
+  .res , .wire {
+    position: absolute;
+    width: 145px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .res , .wire {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .res , .wire {
+    position: absolute;
+    width: 110px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .res , .wire {
+    position: absolute;
+    width: 170px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .res , .wire {
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    padding-bottom: 4%;
+  }
+}
+
+@media only screen and (min-width: 1188px) {
+  .res , .wire {
+    position: absolute;
+    width: 310px;
+    height: 140px;
+    padding-bottom: 18%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .dot {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 70%;
+    display: inline-block;
+  }
+  .dots-mid {
+    margin-bottom: 15%;
+  }
+  .dots-up {
+    margin-top: 30%;
+    margin-bottom: 15%;
+  }
+} 
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
